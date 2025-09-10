@@ -30,11 +30,6 @@ In any Kubernetes distribution, the control plane represents the nervous system 
 
 OpenShift Container Platform, as an enterprise-grade Kubernetes distribution, implements sophisticated high-availability patterns for control plane components. However, even with these safeguards, node-level failures—whether due to hardware malfunction, storage corruption, or network isolation—require immediate and methodical intervention to prevent service degradation.
 
-### The Evolution from Manual Recovery to Automated Replacement
-
-Traditional approaches to control plane node recovery often involved complex manual procedures, requiring deep expertise in etcd operations, certificate management, and cluster bootstrapping. These processes were not only time-intensive but also carried significant risk of introducing human error during high-stress operational incidents.
-
-The methodology presented in this guide represents a paradigm shift toward automated, declarative infrastructure management. By leveraging OpenShift's Infrastructure Provider Installation (IPI) capabilities in conjunction with the Metal³ Bare Metal Operator, we can treat control plane node replacement as a routine operational procedure rather than an emergency disaster recovery scenario.
 
 ### Architectural Foundations: IPI and Metal³ Integration
 

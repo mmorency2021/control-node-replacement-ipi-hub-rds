@@ -1,4 +1,4 @@
-# Enterprise OpenShift Control Plane Node Replacement: A Comprehensive Guide to Zero-Downtime Recovery
+# OpenShift Control Plane Node Replacement: A Comprehensive Guide to Zero-Downtime Recovery
 
 <div align="center">
 

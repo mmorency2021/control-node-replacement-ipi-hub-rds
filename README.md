@@ -6,9 +6,7 @@
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-v1.32.7-blue?style=for-the-badge&logo=kubernetes)
 ![Status](https://img.shields.io/badge/Status-Production_Ready-green?style=for-the-badge)
 
-**A Production-Tested Methodology for Replacing Failed Control Plane Nodes in Bare Metal OpenShift Environments**
 
-*Published by the OpenShift Platform Engineering Team*
 
 </div>
 

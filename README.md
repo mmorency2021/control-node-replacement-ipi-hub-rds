@@ -14,7 +14,7 @@
 
 ## Executive Summary
 
-In enterprise Kubernetes environments, control plane node failures represent one of the most critical operational challenges that platform teams face. When a master node becomes unresponsive or suffers hardware failure, the immediate concern shifts from routine maintenance to business continuity. This comprehensive guide presents a battle-tested methodology for replacing failed control plane nodes in bare metal OpenShift Container Platform (OCP) deployments while maintaining cluster availability and data integrity.
+In Kubernetes environments, control plane node failures represent one of the most critical operational challenges that platform teams face. When a master node becomes unresponsive or suffers hardware failure, the immediate concern shifts from routine maintenance to business continuity. This comprehensive guide presents a battle-tested methodology for replacing failed control plane nodes in bare metal OpenShift Container Platform (OCP) deployments while maintaining cluster availability and data integrity.
 
 The approach detailed in this article leverages OpenShift's Infrastructure Provider Installation (IPI) capabilities combined with the Metal³ Bare Metal Operator to achieve what was once considered impossible: replacing a control plane node with minimal service disruption and without requiring cluster-wide downtime. Through careful orchestration of etcd member management, certificate lifecycle operations, and automated provisioning workflows, we demonstrate how modern cloud-native infrastructure can achieve enterprise-grade reliability even in the face of hardware failures.
 
@@ -82,7 +82,7 @@ Beyond infrastructure requirements, several operational conditions must be satis
 
 The replacement node must meet or exceed the specifications of the failed node. Particular attention should be paid to:
 
-- **CPU Architecture Compatibility**: Ensure the replacement hardware uses the same CPU architecture (x86_64, ARM64, etc.)
+- **CPU Architecture Compatibility**: Ensure the replacement hardware uses the same CPU architecture (x86_64, ARM64, AMD64 etc.)
 - **Network Interface Configuration**: Verify that network interfaces are properly configured and accessible
 - **Storage Performance**: Confirm that storage subsystems meet etcd performance requirements (particularly disk I/O latency)
 - **BMC Functionality**: Validate that the Baseboard Management Controller supports Redfish APIs and virtual media operations
